@@ -20,6 +20,12 @@ public class LaunchChrome
 		System.out.println(keyValue);
 		
 		ChromeDriver cd = new ChromeDriver(); // creating chrome driver object and it will launch chrome browser
+		
+		// cd is the reference variable of the ChromeDriver by which methods of ChromeDriver will be called
+		
+		cd.manage().window().maximize(); // maximize the chrome window
+		
+		cd.get("https://www.google.com"); // navigate to the given url
 	}
 
 }
